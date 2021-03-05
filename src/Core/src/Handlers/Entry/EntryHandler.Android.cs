@@ -37,5 +37,10 @@ namespace Microsoft.Maui.Handlers
 		{
 			handler.TypedNativeView?.UpdateIsTextPredictionEnabled(entry);
 		}
+
+		public static void MapCharacterSpacing(EntryHandler handler, IEntry entry)
+		{
+			handler.TypedNativeView?.UpdateCharacterSpacing(entry);
+		}
 	}
 }

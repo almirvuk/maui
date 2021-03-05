@@ -10,5 +10,6 @@ namespace Microsoft.Maui
 		string Placeholder { get; }
 		Color PlaceholderColor { get; }
 		bool IsReadOnly { get; }
+		public double CharacterSpacing { get; }
 	}
 }

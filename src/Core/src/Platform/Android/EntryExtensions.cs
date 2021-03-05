@@ -1,6 +1,7 @@
 ﻿using Android.Content.Res;
 using Android.Text;
 using Android.Widget;
+using Microsoft.Maui.Platform.Android;
 
 namespace Microsoft.Maui
 {
@@ -58,6 +59,14 @@ namespace Microsoft.Maui
 		public static void UpdateIsTextPredictionEnabled(this EditText editText, IEntry entry)
 		{
 			editText.SetInputType(entry);
+		}
+
+		public static void UpdateCharacterSpacing(this EditText editText, IEntry entry)
+		{
+			//if (Forms.IsLollipopOrNewer)
+			//{
+			//	editText.LetterSpacing = entry.CharacterSpacing.ToEm();
+			//}
 		}
 	}
 }

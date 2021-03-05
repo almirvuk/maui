@@ -45,5 +45,14 @@ namespace Microsoft.Maui
 			else
 				textField.AutocorrectionType = UITextAutocorrectionType.No;
 		}
+
+		public static void UpdateCharacterSpacing(this UITextField textField, IEntry entry)
+		{
+			if (entry.IsTextPredictionEnabled)
+				textField.AutocorrectionType = UITextAutocorrectionType.Yes;
+			else
+				textField.AutocorrectionType = UITextAutocorrectionType.No;
+		}
+		
 	}
 }
